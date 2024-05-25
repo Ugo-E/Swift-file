@@ -4,10 +4,16 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
 header {
     background-color: #271731;
     width: 100%;
-    height: 106px;
+    height: 80px;
     display: flex;
     position: fixed;
     top: 0;
@@ -23,11 +29,11 @@ nav {
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    padding: 0 20px;
+    margin: 0 60px;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
     color: white;
 }
@@ -35,8 +41,7 @@ nav {
 .menu {
     list-style: none;
     display: flex;
-    gap: 80px;
-    margin: 0;
+    gap: 56px;
 }
 
 .menu li {
@@ -48,7 +53,7 @@ nav {
     color: #8C8B8B;
     font-size: 16px;
     position: relative;
-    padding: 5px 0;
+    padding: 8px 0;
     transition: color 0.5s;
 }
 
@@ -56,7 +61,7 @@ nav {
     content: '';
     display: block;
     width: 0;
-    height: 2px;
+    height: 4px;
     background: white;
     position: absolute;
     bottom: 0;
@@ -80,8 +85,8 @@ nav {
     background-color: #280218;
     color: white;
     border: none;
-    width: 205px;
-    height: 56px;
+    width: 160px;
+    height: 48px;
     border-radius: 15px;
     font-size: 16px;
     font-weight: bold;
@@ -90,7 +95,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 80px;
 }
 
 .hire-us:hover {
@@ -98,7 +102,7 @@ nav {
 }
 
 .highlights {
-    margin-top: 106px;
+    margin-top: 80px;
     padding: 40px 20px;
     text-align: center;
     background-image: url('images/Section1 bg.png');
@@ -121,10 +125,15 @@ nav {
     z-index: -1;
 }
 
+.swift-highltights {
+    margin-bottom: 16px;
+}
+
 .project {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-top: 16px;
     margin-bottom: 40px;
     padding: 20px;
     max-width: 800px; /* Set a max width for the project container */
@@ -144,6 +153,7 @@ nav {
     height: auto; /* Maintains aspect ratio */
     border-radius: 10px;
     margin-bottom: 10px; /* Space between images */
+    margin-right: 32px;
 }
 
 .project-details {
@@ -186,3 +196,120 @@ nav {
 .review-project:hover {
     color: white;
 }
+
+.services {
+    padding: 40px 20px;
+    background-color: #1a122b;
+    color: white;
+    text-align: center;
+}
+
+.services-title {
+    margin-bottom: 4px;
+}
+
+.services-description {
+    font-size: 16px;
+    margin-bottom: 56px;
+    color: #b0a3c3;
+    margin-top: 4px;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 24px;
+    margin: 56px;
+    margin-top: 56px;
+}
+
+.service-card {
+    background-color: #271731;
+    border: 1px solid #b0a3c3;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.service-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: #b0a3c3;
+}
+
+.service-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #b0a3c3;
+}
+
+.service-description {
+    font-size: 14px;
+    color: #b0a3c3;
+}
+
+.about-us {
+    background-color: #1a122b; /* Matching background color */
+    color: white; /* White text for readability */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: left; /* Align text to the left */
+}
+
+.about-us h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the main heading */
+}
+
+.about-us h2 {
+    font-size: 24px;
+    margin-top: 30px; /* Space above each subheading */
+    margin-bottom: 10px; /* Space below each subheading */
+    color: #b0a3c3; /* Light grey color for subheadings */
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 20px; /* Space below each paragraph */
+}
+
+.about-us ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.about-us li {
+    font-size: 16px;
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 10px; /* Space below each list item */
+    display: flex; /* Use flexbox to align items */
+    align-items: flex-start;
+}
+
+.about-us li strong {
+    margin-right: 10px; /* Space between the bold text and the explanation */
+}
+
+.about-us li strong::after {
+    content: ':'; /* Add a colon after the bold text */
+    margin-left: 5px; /* Space after the colon */
+}
+
+.about-us li::before {
+    content: '•'; /* Custom bullet point */
+    color: #b0a3c3; /* Light grey color for the bullet point */
+    font-size: 20px;
+    margin-right: 10px; /* Space between the bullet point and text */
+    flex-shrink: 0; /* Prevent bullet point from shrinking */
+    width: 20px; /* Set a fixed width for the bullet point */
+    text-align: center; /* Center align the bullet point */
+}
+
+.about-us li span {
+    flex: 1; /* Allow the text to wrap */
+    display: inline-block; /* Ensure the span behaves as an inline block */
+    max-width: calc(100% - 30px); /* Adjust the maximum width of the span */
+    vertical-align: top; /* Align text to the top */
+}
+
