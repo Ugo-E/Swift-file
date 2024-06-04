@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
@@ -33,7 +33,7 @@ nav {
 }
 
 .logo img {
-    height: 100px; /* Adjust the height as needed */
+    height: 80px; /* Adjust the height as needed */
   }
 
 .menu {
@@ -239,12 +239,12 @@ nav {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #b0a3c3;
+    color: white;
 }
 
 .service-description {
     font-size: 14px;
-    color: #b0a3c3;
+    color: rgb(155, 150, 150);
 }
 
 .about-us {
